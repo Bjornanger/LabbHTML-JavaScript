@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    
+}
+
+
+.header {
+    background: linear-gradient(rgb(204, 41, 54), rgb(76, 134, 168), rgb(16, 16, 16));
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+
+
+.container {
+    display: flex;
+}
+
+.welcomeImg {
+    display: inline;
+}
+
+.aboutTransformers{
+    font-size: large;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: blueviolet;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+
+.navbar {
+    background-color: black;
+    position: sticky;
+
+}
+
+.navbar a {
+    color: blueviolet;
+
+}
+
+.footer {
+    background: linear-gradient(rgb(16, 16, 16), rgb(76, 134, 168), rgb(204, 41, 54));
+    text-align: center;
+    
+    font-size:small;
+    font-weight: bold;
+    position: fixed;    
+    bottom: 0;
+    width: 100%;
+
+}
+
+@media (max-width: 600px) {
+    .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
